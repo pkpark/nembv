@@ -1,0 +1,16 @@
+mongo "mongodb+srv://cluster0-mxirx.mongodb.net/test" --username nembv
+mongo "mongodb+srv://cluster0-mxirx.mongodb.net/nembv" --username nembv
+
+
+
+
+mongo "mongodb://cluster0-shard-00-00-mxirx.mongodb.net:27017,cluster0-shard-00-01-mxirx.mongodb.net:27017,cluster0-shard-00-02-mxirx.mongodb.net:27017/nembv?replicaSet=Cluster0-shard-0" --ssl --authenticationDatabase admin --username nembv --password nembv
+
+
+
+
+
+-- 3.6 아래
+'mongodb://nembv:nembv@cluster0-shard-00-00-mxirx.mongodb.net:27017,cluster0-shard-00-01-mxirx.mongodb.net:27017,cluster0-shard-00-02-mxirx.mongodb.net:27017/nembv?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin';
+-- 3.6 이상
+'mongodb+srv://nembv:nembv@cluster0-mxirx.mongodb.net/nembv';
